@@ -1,0 +1,337 @@
+---
+toc: true
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: bottom
+  loop: true
+echo: false
+indent: false
+filters:
+  - _extensions/dialoa/first-line-indent/first-line-indent.lua
+---
+
+
+```{r}
+descrip_exif <- function(x){
+  exif <- exifr::read_exif(
+    path = x, 
+    tags = c("Make" ,"Model", "FocalLength", "FNumber", "ExposureTime", 
+             "ISO", "LensModel", 
+             "BatteryLevel", "SelfTimer", "DateTimeOriginal", "WorldTimeLocation")
+  )
+  
+  glue::glue("{lubridate::as_datetime(glue::glue('{exif$DateTimeOriginal}'))}")
+}
+```
+
+::: {style="text-align: center;"}
+# The Quiet Beauty of Wintry, Urban Landscapes
+By: Alex Smilor
+:::
+
+\
+
+When you picture a beautiful landscape, what do you imagine? A mountain illuminated by the rising sun? A forest of ancient, towering trees? A sandy beach with waves crashing against the shore? Maybe you picture your favorite national park or a local landscape particularly memorable to you?\
+\
+
+I can’t know what you envision. Perhaps it was one of the landscapes I described, perhaps not. What I do know is what I imagine when I try to picture a natural landscape. For me, it’s usually a mountain, sometimes in the Rockies, other times in the Sierras. I picture these mountains as wild, untouched places, free from cars and cities and people, even if they aren’t in reality. I picture something a little like this:\
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![The alpine tundra of the Colorado Rocky Mountains](imgs/AWS-1641-Pano-low.jpg){.lightbox group="my-gallery1" description="`r descrip_exif("imgs/AWS-1641-Pano-low.jpg")`" fig-alt="An image of colorful mountains above the treeline, with the sun just beginning to rise"}
+:::
+
+I picture this because these are the places I love. Summertime camping and hiking trips into the mountains are a significant part of who I am and represent some of the times that I am happiest with life. Unfortunately, there’s a touch of irony there. These are some of my favorite places, where I have made some of my most treasured memories. They are also some of the places I spend the least amount of time. I don’t live in the mountains and the summer months vanish in the blink of an eye.\
+\
+
+I live in the city and winter makes up almost half the year.\
+\
+
+Sometimes, I find it difficult to see the beauty in the places I spend most of my time. I still struggle with it, truthfully. Perhaps you do too.\
+\
+
+------------------------------------------------------------------------
+
+\
+
+I want to share some scenes from where I currently find myself as I write these words: the city of Fort Collins in northern Colorado on a stormy winter’s night. Winter here in the city is a quiet time of year. The plants are colored in varied hues of browns and grays. Snow occasionally covers the seemingly dead grass and the cold ground.\
+\
+
+So I want to ask, what do you think when you see this image, taken here in Fort Collins at a local park? How would you describe it? How does it make you feel?  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![A cold winter landscape at a local park](imgs/AWS-2640.jpg){.lightbox group="my-gallery2" description="`r descrip_exif("imgs/AWS-2640.jpg")`" fig-alt="An image of a brown field of grasses with bare trees in the background and a cloudy sky" width=40%}
+:::  
+
+And what of this image, taken at a busy intersection surrounded by apartments here in Fort Collins?\
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![An intersection surrounded by apartments](imgs/AWS-3643.jpg){.lightbox group="my-gallery2" description="`r descrip_exif("imgs/AWS-3643.jpg")`" fig-alt="An image of a city intersection surrounded by apartment buildings and trees"}
+:::
+
+Though I don’t know what exactly you felt seeing these images nor the words you would choose to describe them, I have a good feeling that neither of these landscapes were what you pictured earlier when I asked you to picture a beautiful landscape. You might describe the first image as boring, grey, dead, or unappealing. You might have described the second image as artificial, developed or unnatural. Regardless of the exact words that you used to describe these landscapes, I’m fairly confident there was little overlap between those words and the ones you would describe your favorite landscape with.  
+\
+
+This brings us to the crux of the issue. Here in Colorado, most of the population spends a significant portion of their time in places that look like these images: city streets lined with shops and urban parks that spend almost half the year looking brown and grey. These aren’t the most exciting nor the most beautiful landscapes, at least in the traditional sense. And this creates an issue where the places we spend the most time are not the ones that we connect with most strongly.  
+\
+
+------------------------------------------------------------------------
+
+\
+
+::: {style="text-align: center;"}
+# Berries and Birds
+:::
+
+\
+
+I spend a lot of time biking year round here in Fort Collins, regardless of the weather. During the summer, these bike rides are often enjoyable. I regularly hear finches and warblers singing and the weather is pleasant. The winter is often the opposite, especially during colder periods. During this time of the year, the focus is less on enjoying my rides through town and more on getting from point A to point B. It’s cold and often windy and I just want to get to my destination and get inside.  
+\
+
+Thus, in the winter I spend a whole lot less time enjoying the journey, especially during my more mundane rides to school or to run errands. But, every once in a while, among the grays of bare trees and concrete, a flurry of activity and noise makes me stop and marvel for just a few moments. Robin and waxwing flocks, colorful and wonderfully noisy as they feast upon the few trees with fruits still hanging from their branches, always make me stop.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![A Bohemian Waxwing feasting on a crabapple](imgs/AWS-8280-Edit.jpg){.lightbox group="my-gallery3" description="`r descrip_exif("imgs/AWS-8280-Edit.jpg")`" fig-alt="An image of a red and gray bird perched on a branch eating a red berry" width=40%}
+:::  
+
+There’s just something about the contrast of the vibrant, active flocks against gray skies and the dead lawns that just makes them stand out. It’s incredible to see these beautiful birds in neighborhoods and otherwise quiet parks. Often, I see them feasting on the bright red fruits of crabapple trees planted along the streets or eating the berry-like cones of juniper trees found throughout Fort Collins’ neighborhoods.  
+\
+
+The presence of these fruit-bearing trees act as miniature oases, whether they are next to a busy highway or in a park. They provide vital food sources during the coldest parts of the year when the abundance of insects and other food sources is low.^[Kwit, C., Levey, D. J., Greenberg, C. H., Pearson, S. F., McCarty, J. P., & Sargent, S. (2004). Cold temperature increases winter fruit removal rate of a bird-dispersed shrub. Oecologia, 139(1), 30–34. https://doi.org/10.1007/s00442-003-1470-6] Without these planted fruit-bearing trees and shrubs, whether they are native or not,^[Gleditsch, J. M., & Carlo, T. A. (2010). Fruit quantity of invasive shrubs predicts the abundance of common native avian frugivores in central Pennsylvania. Diversity and Distributions, 17(2), 244–253. https://doi.org/10.1111/j.1472-4642.2010.00733.x] the winter survivorship of robins, waxwings, and other frugivorous birds and mammals may be much lower.  
+\
+
+So, next time you pass a leafless tree with bright red berries, pause for a moment and see if anything is feeding on those bright berries.  
+\
+
+------------------------------------------------------------------------
+
+\
+
+::: {style="text-align: center;"}
+# Secrets of an Urban Natural Area
+:::
+
+\
+
+Let me set a different scene. It’s a cold January morning, just as the sun is rising and the sky begins to lighten. Temperatures rest below freezing, the sky is a dull gray and a few inches of fresh snow lie on the ground. It’s by no means the ideal time to be outside, but here I am regardless, having just arrived at a small local park sandwiched between two neighborhoods.  
+\
+
+Here, cottonwood trees stand tall, their bare branches reaching to the sky, and brown cattails cluster around the small stream that runs through the park. Even this stream is not natural, shaped and sculpted by humans to direct storm and flood waters in a direction most beneficial to us. In this case, this small, heavily managed wetland and riparian woodland offers an invaluable refuge to numerous species of wildlife.  
+\
+
+Though I will not see all of them on this day, this unassuming patch of reeds, trees, and shrubs harbors sheltered between neighborhoods, apartments and a busy road is home to an incredible diversity of life in the winter. I remember being thrilled when seeing a red fox scurry across the path, pausing for only a moment before disappearing into brown grass the same color as its fur. I have memories of encountering small herds of mule deer in this park and the yards around it, having come down from the foothills and mountains to take advantage of the abundant food and milder climate. I have seen great horned owls here many times, hunting over the marsh and preening in the trees.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![A mule deer buck standing on a snowy path](imgs/AWS-1785-Enhanced-NR.jpg){.lightbox group="my-gallery4" description="`r descrip_exif("imgs/AWS-1785-Enhanced-NR.jpg")`" fig-alt="An image of a mule deer with small antlers on a snowy path with homes and cars in the background"}
+
+![A Great Horned Owl preening itself](imgs/AWS-3233.jpg){.lightbox group="my-gallery4" description="`r descrip_exif("imgs/AWS-3233.jpg")`" fig-alt="An image of a large owl with gray plumage and orange ear tufts bending over using its beak to pick at feathers on its legs"}
+
+![A red fox hiding in the grasses](imgs/AWS-9056.jpg){.lightbox group="my-gallery4" description="`r descrip_exif("imgs/AWS-9056.jpg")`" fig-alt="An image of a fox with orange fur blending in with grasses and bushes that match its coat color"}
+:::
+
+But on this I found something special lurking in those snow-covered reeds, something you wouldn’t expect in an urban park only 20 feet from a suburban home. At first it's just a bit of movement in the cattails, a smudge of brown. Then it pops out, revealing a gray face and a long, orange bill. A Virginia Rail, a secretive creature rarely seen in the open. It dips its curved beak into the frigid water, probing for the small aquatic plants, the only green present here in the winter. It continues feeding for a moment, until a hawk swoops down and it scurries off into the reeds to hide.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![A Virginia Rail feeding on aquatic plants](imgs/AWS-7869-Edit.jpg){.lightbox group="my-gallery4" description="`r descrip_exif("imgs/AWS-7869-Edit.jpg")`" fig-alt="An image of a round water bird with a gray face, brown body, and long orange beak feeding on aquatic plants in a marsh"}
+:::
+
+It’s often easy to dismiss urban spaces as ecological voids. This tiny urban natural area, however, tells a different story. It provides valuable habitat for even the most secretive and shy creatures. Rails and owls and foxes thrive in these small patches of habitat. Often, riparian urban forests much like this one serve to negate some of the impacts urban spaces have on ecosystem functions, improving species richness and abundance in these tiny oases of heavily managed wilderness.^[Atchison, K. A., & Rodewald, A. D. (2006). The Value of Urban Forests to Wintering Birds. Natural Areas Journal, 26(3), 280–288. https://doi.org/10.3375/0885-8608(2006)26[280:tvouft]2.0.co;2]  
+\
+
+------------------------------------------------------------------------
+
+\
+
+::: {style="text-align: center;"}
+# An Oasis in the Snow
+:::
+
+\
+
+During the wintertime, one of the places I visit more than any other is the local city park. It’s much like any other urban or suburban city park and probably bears a close resemblance to your local park. It has expansive grassy lawns, many scattered trees and a few sports fields. In the summer, this park becomes a community gathering space, hosting live music, youth soccer games, and providing ample space to picnic. In the winter, it’s a lot quieter. People come to walk or run through the park, but few people stop to just relax and enjoy the park, especially during the coldest months of the year.  
+\
+
+However, for me, the real draw to this park in the winter is the small urban lake here. Frequently frozen over like most of the other bodies of water found around here, this lake has one special feature only possible due to its highly artificial nature: it’s aerated. At a few select locations, air bubbles out of underwater pipes and keeps the water constantly circulating and in motion. Though this serves many purposes, it also prevents parts of the lake from ever freezing over, even when temperatures drop below freezing for weeks on end.  
+\
+
+And here, on these small patches of open water, some of the only open water in the region during the winter, hundreds, if not thousands, of geese and ducks congregate. It is a spectacle to behold. The bright white of ice and snow blotted out by hundreds of tightly packed geese and dozens of vibrant and brightly colored mallards and shovelers stand out as they swim through the dark, cold water.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![A Northern Shoveler flying in the snow](imgs/AWS-2677-Enhanced-NR.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-2677-Enhanced-NR.jpg")`" fig-alt="An image of a duck with a green head, brown body and orange feet flying as snow falls"}
+
+![Ducks and geese crowd around the open water on a snowy day](imgs/AWS-1237-Pano-44.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-1237-Pano-44.jpg")`" fig-alt="An image of a mostly frozen urban pond with many geese and ducks around the open water"}
+:::
+
+This park is more than just a resting place for these abundant waterfowl, providing feeding grounds for multiple species. Goldeneyes dive deep below the water, feasting on the crustaceans that lurk in the depths. Mallards feed on the water’s surface and on food given them by park visitors, even beginning to court one another as the winter draws to a close. Geese forage on the grassy lawns around the pond during the day. And, this abundance of waterfowl draws those they prey on them: the magnificent Bald Eagle. In the right conditions, especially when extremely frigid temperatures fall on northern Colorado, freezing nearly all of the reservoirs, it is possible to find half a dozen eagles here at this small pond, feasting on geese and ducks.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
+![A Canada Goose forages in snow-covered grass](imgs/AWS-7178-Enhanced-NR.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-7178-Enhanced-NR.jpg")`" fig-alt="An image of a large brown goose with a black head walking on a snowy lawn with grass stuck to its beak"}
+
+![A Mallard swimming and feeding](imgs/AWS-8472-Enhanced-NR.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-8472-Enhanced-NR.jpg")`" fig-alt="An image of a brown duck with an orange bill swimming in the water"}
+
+![Two Bald Eagles face off over a dead goose](imgs/AWS-9320-Edit.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-9320-Edit.jpg")`" fig-alt="An image of two white-headed eagles with yellow beaks eating a dead goose in a snowy landscape"}
+
+![A group of Northern Shovelers feeding](imgs/AWS-2567.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-2567.jpg")`" fig-alt="An image of a large group of brown and orange ducks with a building in the background"}
+
+![A Common Goldeneye eating a crustacean](imgs/AWS-3034-Enhanced-NR.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-3034-Enhanced-NR.jpg")`" fig-alt="An image of a black and white duck with yellow eyes eating a crustacean in an icy pond"}
+
+![Two Mallards swimming together](imgs/AWS-2303-Enhanced-NR.jpg){.lightbox group="my-gallery5" description="`r descrip_exif("imgs/AWS-2303-Enhanced-NR.jpg")`" fig-alt="An image of two ducks, one all brown and the other gray with a green head in an icy pond"}
+:::
+
+This urban pond, despite its artificial appearance and its location in the middle of a busy city, nonetheless hosts an incredible diversity of life in the winter, especially in terms of waterfowl and other birds. This is true not just at this small city park, but others elsewhere in the country, and such parks have been documented hosting the majority of all waterfowl species found in the region.^[Wise, A., Rosener, A., Martin, A., Cote, M., Hopwood, C. D., Schwartz, E., Tharp, R., & Blake, S. (2024). A deep dive into the waterbird community of an urban oasis: implications for park management. Urban Ecosystems, 27(6), 2087–2099. https://doi.org/10.1007/s11252-024-01576-4] These urban lakes provide valuable feeding and resting grounds for thousands of individuals and many individual species during a time of year when many bodies of water are frozen and inaccessible to these species.  
+\
+
+------------------------------------------------------------------------
+
+\
+
+::: {style="text-align: center;"}
+# Benefits and Threats of Urban Ecosystems
+:::
+
+\
+
+I chose to share these stories and these places because they highlight some of the unique and important ways that wildlife interact with urban settings, and they are some of the moments that resonated most strongly with me personally. However, they are only some of the ways that nature and urban places coexist. Leaf litter from neighborhood trees is used by many insect species to survive the winter. Small mammals, such as squirrels, run amok throughout residential areas and urban parks, feasting on whatever they can find. Bird feeders can provide stable food sources for numerous species, alleviating some of the difficulties of foraging in the winter. All of these and so much more are examples of how urban areas and biodiversity can not just exist together but even benefit one another in some cases.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
+![An American Robin foraging through litter ](imgs/AWS-2092-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-2092-Enhanced-NR.jpg")`" fig-alt="An image of a large brown goose with a black head walking on a snowy lawn with grass stuck to its beak"}
+
+![A nuthatch and finch feed on the seeds in a feeder](imgs/AWS-0514-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-0514-Enhanced-NR.jpg")`" fig-alt="An image of a small blue and orange bird landing on a green bird feeder filled with seed"}
+
+![A squirrel peaks out of the snow](imgs/AWS-2246.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-2246.jpg")`" fig-alt="An image of an orange squirrel covered in snow in a peaking out of deep snow"}
+
+:::
+
+While I hope that these examples illustrate some of the value of urban ecosystems during the winter months, you may have another question. Why does it matter to me? And that is a great question. Though I apply intrinsic values to all of the creatures and places I described below, you may not have the same connection to them that I do. Fortunately, urban ecosystems and the organisms that call them home also provide us humans with numerous benefits.  
+\
+
+Interacting with and spending time in nature conveys numerous health benefits to people, from improving mental well-being^[van den Berg, M., Wendel-Vos, W., van Poppel, M., Kemper, H., van Mechelen, W., & Maas, J. (2015). Health benefits of green spaces in the living environment: A systematic review of epidemiological studies. Urban Forestry & Urban Greening, 14(4), 806–816. https://doi.org/10.1016/j.ufug.2015.07.008] to increasing attention span in children.^[Moll, A., Collado, S., Staats, H., & Corraliza, J. A. (2022). Restorative effects of exposure to nature on children and adolescents: A systematic review. Journal of Environmental Psychology, 84, 101884. https://doi.org/10.1016/j.jenvp.2022.101884] Yet, every winter I notice a curious, yet unsurprising pattern; I seem to encounter fewer people outside, especially when temperatures dip below freezing. Nowhere have I seen this more noticeably than at a local park I frequent. Here, there is an owl roost well known among members of the community. On a warm day, it’s not uncommon to see lots of people taking a moment away from their walk to admire these owls, sometimes drawn by the presence of birdwatchers or photographers, eager to learn what they are looking at. On a cooler day, however, there are often far fewer people present walking along the trail and usually no one checking out the owl.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
+![A cold 40-degree day at the park](imgs/AWS-3420.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3420.jpg")`" fig-alt="An image of a shaded, paved walking path surrounded by bare trees."}
+
+![A warmer 50 degree day at the park](imgs/AWS-3009.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3009.jpg")`" fig-alt="An image of apaved walking path surrounded by bare trees with people recreating"}
+:::
+
+This is not just a phenomenon here at this park and at this owl roost. In other parks elsewhere in the world, people tend to interact less with nature during the wintertime, with potential consequences for their health and well-being.^[Jakstis, K., & Fischer, L. K. (2024). An observational assessment of winter human-nature interaction in urban parks. Basic and Applied Ecology, 79, 17–28. https://doi.org/10.1016/j.baae.2024.05.001] Beyond that, fewer people interacting with nature means that there tends to be less data being contributed to large citizen science projects, like iNaturalist^[Di Cecco, G. J., Barve, V., Belitz, M. W., Stucky, B. J., Guralnick, R. P., & Hurlbert, A. H. (2021). Observing the Observers: How Participants Contribute Data to iNaturalist and Implications for Biodiversity Science. BioScience, 71(11), 1179–1188. https://doi.org/10.1093/biosci/biab093] or eBird,^[Zhang, G. (2020). Spatial and Temporal Patterns in Volunteer Data Contribution Activities: A Case Study of eBird. ISPRS International Journal of Geo-Information, 9(10), 597. https://doi.org/10.3390/ijgi9100597] during the wintertime. Far less scientific research across numerous ecological disciplines is conducted during the winter, leaving broad gaps in our collective knowledge.^[Saana Sipari. (2023). Winter, the forgotten season. Global Change Biology, 30(1). https://doi.org/10.1111/gcb.17085] This, especially in urban environments, poses a risk.  
+\
+
+Urban environments and the species they both coexist with and displace are already at great risk. Wintertime is already a time of hardship for many species, as food is scarce and freezing temperatures come frequently. Lacking valuable data and research during this time of the year means that we can lack critical knowledge needed to make informed decisions about development, management, and conservation. This, in turn, can exacerbate issues in already stressed urban environments.  
+\
+
+Urban environments often have far less biodiversity than nearby rural areas or undeveloped land. You have probably noticed this, even if you haven’t fully registered it. Your neighbor probably hosts only a few common species of birds, mammals and insects, and you may not notice them as often. Yet, when you go to a natural area, park or protected area, chances are you notice a lot more around you. This phenomenon has been recorded throughout the world, across different seasons, and across the taxonomic tree.^[McKinney, M. L. (2008). Effects of urbanization on species richness: A review of plants and animals. Urban Ecosystems, 11(2), 161–176. https://doi.org/10.1007/s11252-007-0045-4]  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
+![An alley in Denver that some house finches call home](imgs/AWS-3657.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3657.jpg")`" fig-alt="An image of an alley surrounded by tall buildings with dumpsters and small brown birds perched on a fence in the alley" width=40%}
+:::
+
+Yet, these urban spaces and the organisms that live there provide us with many services that often go unnoticed.^[Bolund, P., & Hunhammar, S. (1999). Ecosystem services in urban areas. Ecological Economics, 29(2), 293–301. https://doi.org/10.1016/s0921-8009(99)00013-0] Urban forests, such as natural areas or arboretums, can provide recreational opportunities and help regulate the climate around them, minimizing the impacts of urban heat islands. Parks and suburban lawns can help with stormwater drainage and help clean the air of pollutants. Even things as small as street trees can help reduce urban noise and provide habitat for birds and mammals. Though these services often go unnoticed and unappreciated, they and others like them are some of the ways that the many parts of complex urban ecosystems help to make our lives more enjoyable and comfortable.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
+![A snowy pathway in downtown ](imgs/AWS-2596.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-2596.jpg")`" fig-alt="An image of a snow-covered pathway illuminated by street lamps" width=40%}
+:::
+
+The presence of a well-managed and diverse urban ecosystem is not always assured and, unfortunately, the impacts of an unhealthy urban ecosystem often fall disproportionately on people of color and low income neighborhoods. Here in Fort Collins, this effect is not always very obvious due to its relatively small size, good environmental policies, and the relative affluence of the city, though it does exist. However, in the much larger city of Denver, it is possible to see the inequity of the distribution of some facets of healthy urban ecosystems with satellite imagery. Below is an image of suburbs south of downtown Denver.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
+![An aerial view of suburbs south of Denver. The poorer neighborhoods on the left are less green while the wealthier neighborhoods on the right have are more forested and greener](imgs/urban.png){.lightbox group="my-gallery6" description="Credit: Google, Airbus, Landsat, Maxar Technologies" fig-alt="A satellite image showing suburbs of Denver, with half the image having fewer trees and the other half having more and appearing greener"}
+:::
+
+Notice the difference in greenery on either side of the South Platte River. To the right of the river, the neighborhoods are dominated by the dark green hues of abundant street trees and a large urban park dominates the center of the neighborhood. On the left side of the river, however, gray and brown hues overpower other colors, with far fewer street trees present throughout. Unsurprisingly, this divide falls largely across economic and demographic lines. The greener neighborhood on the right is Washington Park, a relatively affluent and white neighborhood. To the left however, these neighborhoods, including Ruby Hill and Athmar Park, are home to far more people of color and people with low incomes. This socio-economic divide and the resulting ecological difference likely have numerous effects, including difference in the access to the health benefits of interacting with nature and on the biodiversity of these neighborhoods.^[Leong, M., Dunn, R. R., & Trautwein, M. D. (2018). Biodiversity and socioeconomics in the city: a review of the luxury effect. Biology Letters, 14(5), 20180082. https://doi.org/10.1098/rsbl.2018.0082] The greener and more affluent Washington park likely hosts a greater diversity of wildlife than the neighboring communities of Ruby Hill and Athmar Park, despite their close proximity. Protecting urban ecosystems requires not just managing landscapes for wildlife and biodiversity, but addressing systemic socio-economic issues that work against such goals.  
+\
+
+Now, we have seen some of the ways that urban landscapes provide habitat for wildlife and how they provide communities with valuable services, as well as some of the challenges that face these ecosystems. So, let us return to the images that I shared at the beginning of this story and take a look at them again.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
+![A cold winter landscape at a local park](imgs/AWS-2640.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-2640.jpg")`" fig-alt="An image of a brown field of grasses with bare trees in the background and a cloudy sky" width=40%}
+:::
+
+This brown field with bare trees in the background, does not form the most appealing scene. Nonetheless, it provides both the ecosystem and the local community with numerous services. Snow melting here in the winter is captured by the soil, rather than flooding streets and gutters. The large cottonwood trees of the riparian woodland in the background provide habitat for owls, woodpeckers, squirrels and more. The seeds of the grasses and other plants in the foreground provide food for many different species that call this park home. The paths that meander through this park give local residents an opportunity to easily get outside and interact with nature, even in the winter when other recreational opportunities become more challenging.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 1em;"}
+![A goldfinch feeding on a dried sunflower](imgs/AWS-7334-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-7334-Enhanced-NR.jpg")`" fig-alt="An image of a small yellow and brown goldfinch perched on a dried, dead plant"}
+
+![An Eastern Screech-Owl in its roost](imgs/AWS-3410-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3410-Enhanced-NR.jpg")`" fig-alt="An image of a small gray owl in a cavity"}
+
+![A riparian woodland dominated by bare cottonwoods](imgs/AWS-2636.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-2636.jpg")`" fig-alt="An image of a snowy riverine landscape with large bare trees lining both sides of the river" }
+
+![People birdwatching on a warm winter day](imgs/AWS-2985.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-2985.jpg")`" fig-alt="An image of a group of people looking up at trees birdwatching"}
+:::
+\
+
+Now, take a look at the second photo once more.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));grid-gap: 1em;"}
+![An intersection surrounded by apartments](imgs/AWS-3643.jpg){.lightbox group="my-gallery2" description="`r descrip_exif("imgs/AWS-3643.jpg")`" fig-alt="An image of a city intersection surrounded by apartment buildings and trees"}
+:::
+
+Though the landscape in this image is undeniably dominated by pavement and development, that doesn’t mean it serves no role in the broader ecosystem. The tall trees along the side of the street create a noise buffer between the apartments and the busy street. These trees also provide habitat for various birds and squirrels. The large pine trees provide shelter and perches for waxwings, while the red crab apples of the bare trees on the left side of the image serve as important food sources for birds and squirrels, especially in the late winter when many other food sources have already been exhausted. The grassy lawns offer grazing opportunities for the geese that frequent this area.  
+\
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 1em;"}
+![A Cedar Waxwing feeding on the berries of a crabapple tree](imgs/AWS-3579-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3579-Enhanced-NR.jpg")`" fig-alt="An image of a brown bird in a tree laden with berries with street lights in the background."}
+
+![The red berries of a crabapple tree](imgs/AWS-3594-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3594-Enhanced-NR.jpg")`" fig-alt="An image of red berries against a dark green background"}
+
+![Cedar waxwings perched in a tree](imgs/AWS-3604-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3604-Enhanced-NR.jpg")`" fig-alt="An image of a few brown and yellow birds in a pine tree"}
+:::
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 1em;"}
+![Canada Geese feeding on a brown lawn](imgs/AWS-3605-Enhanced-NR.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3605-Enhanced-NR.jpg")`" fig-alt="An image of two geese eating on a brown lawn with bare trees and cars in the background"}
+:::
+
+Hopefully, showing you these urban, wintry landscapes from a different perspective helps recontextualize them and their role in the broader ecosystem. When next you find yourself outside in the winter, keep your eyes open, looking for places much like this and the creatures that they shelter. Look for the bright red of crabapples or the brilliant yellow of the goldfinch. Then, when you notice those bright flashes of color in these otherwise dull landscapes, look for the less vibrant creatures that make these habitats their home too, whether it be a female house finch or a mink slinking its way along a riverbank.  
+\
+
+::: {.custom-gallery style="display: flex; gap: .1em; height: 500px; align-items: center; justify-content: center;"}
+
+![A mink on ice](imgs/AWS-9715-Edit.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-9715-Edit.jpg")`" fig-alt="An image of a brown mink walking on ice" width=84%}
+
+![A house finch in a crabapple tree](imgs/AWS-0371.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-0371.jpg")`" fig-alt="An image of a gray finch eating red berries with a blue background"}
+
+:::
+       
+------------------------------------------------------------------------
+
+\
+
+::: {style="text-align: center;"}
+# What You Can Do
+:::
+
+\
+
+Perhaps you now feel that it is important to consider winter and urban spaces in management and urban design, and you now wonder what you can do. For starters, simply trying to spend more time outside can benefit your mental and physical health, along with allowing you more time to connect with the nature in your neighborhood. However, if you wish to do more, there are many possibilities.  
+\
+
+Planting native plants, especially ones whose seeds or fruits last through part or all of the winter, can help provide food and habitat for many species during the coldest months of the year. The National Audubon Society provides a [curated list](https://www.audubon.org/native-plants) of recommended native plants for every zip code in the country and many local gardening clubs or nurseries may have similar information. Similarly putting out [feeding stations](https://www.allaboutbirds.org/news/analysis-do-bird-feeders-help-or-hurt-birds/) for birds can provide them with a reliable source of food when many natural food sources are inaccessible or scarce. Another way to support local biodiversity is by [leaving fallen leaves](https://xerces.org/leave-the-leaves) on the ground, where they can decompose to return nutrients to the soil and simultaneously provide shelter for many insects. Doing any of these things can be a good way to improve habitat and urban biodiversity in your local community.   
+\
+
+Another way to contribute to the protection and understanding of urban ecosystems in the winter time is through numerous citizen science initiatives. Submitting observations of species to large-scale projects like [iNaturalist](https://www.inaturalist.org) and [eBird](https://ebird.org) can help scientists map species distributions and track trends in populations. Beyond these global projects, there are many national or local citizen science projects that serve to collect data for various purposes,  whether it be a local [Christmas Bird Count](https://www.audubon.org/community-science/christmas-bird-count) or a project run by a local organization. Information collected through these projects can contribute to everything from scientific publications to policy decisions.  
+\
+
+Though these are all valuable and meaningful ways to support and learn more about urban ecosystems during the winter, some issues, such as the socio-economic inequality of green space distribution and the development of urban ecosystems that provide services for humans and habitat for many organisms, can’t be resolved by one person alone. Effectively making a difference in these larger issues requires taking part in the democratic process. Voting for people that will advocate for further improvement of urban ecosystems and participating in grassroots organizations to make your voice heard are important ways to advocate for policy changes. Volunteering with local nonprofits, conservancies and public lands agencies can also be an effective tactic, making change at the grassroots level. Through a lot of effort and determination, meaningful change can be made at a large scale.  
+\
+
+With all that being said, I hope now that you are able to appreciate urban ecosystems during the winter more and that you learned something about how they can support both biodiversity and humans in the right situations. I also hope you also see that there are many challenges facing these systems, such as inequalities in the presence of greenery and declining biodiversity, as well as human challenges, with much less time spent interacting with nature during the winter. Yet, there are solutions that can make a real difference, even on just an individual level. We can employ these solutions to help tackle the challenges and enhance urban ecosystems during the winter to support both ourselves and the rest of the organisms we share our urban landscapes with during the cold, dark months of the year.  
+\
+
+Now, if you still question the value of taking care of and studying urban ecosystems during the winter, there is one last thing that I haven’t mentioned. One crucial thing. Winter doesn’t last forever. Eventually, the days grow longer and the weather warmer. Trees begin to grow out new leaves and birdsong fills the air. Insects and mammals emerge from their winter hibernations.  
+\
+
+Take care of our urban ecosystems during the winter and those efforts will bear fruit once spring arrives. 

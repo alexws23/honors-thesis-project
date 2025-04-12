@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Urban Winter Wilderness"
+  favicon: imgs/Smilor_Favicon.png
+  page-footer:
+    background: light
+    left: Copyright 2025, Alex Smilor
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: 
+      light: lightmode.scss
+      dark: darkmode.scss
+    toc: true
+    page-layout: full
+
+editor: visual
+css: styles.css
