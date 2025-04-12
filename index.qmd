@@ -233,7 +233,7 @@ Urban environments often have far less biodiversity than nearby rural areas or u
 \
 
 ::: {fig-align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 1em;"}
-![An alley in Denver that some house finches call home](imgs/AWS-3657.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3657.jpg")`" fig-alt="An image of an alley surrounded by tall buildings with dumpsters and small brown birds perched on a fence in the alley" width=40%}
+![An alley in Denver that some House Sparrows call home](imgs/AWS-3657.jpg){.lightbox group="my-gallery6" description="`r descrip_exif("imgs/AWS-3657.jpg")`" fig-alt="An image of an alley surrounded by tall buildings with dumpsters and small brown birds perched on a fence in the alley" width=40%}
 :::
 
 Yet, these urban spaces and the organisms that live there provide us with many services that often go unnoticed.^[Bolund, P., & Hunhammar, S. (1999). Ecosystem services in urban areas. Ecological Economics, 29(2), 293–301. https://doi.org/10.1016/s0921-8009(99)00013-0] Urban forests, such as natural areas or arboretums, can provide recreational opportunities and help regulate the climate around them, minimizing the impacts of urban heat islands. Parks and suburban lawns can help with stormwater drainage and help clean the air of pollutants. Even things as small as street trees can help reduce urban noise and provide habitat for birds and mammals. Though these services often go unnoticed and unappreciated, they and others like them are some of the ways that the many parts of complex urban ecosystems help to make our lives more enjoyable and comfortable.  
