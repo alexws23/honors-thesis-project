@@ -335,3 +335,7 @@ Now, if you still question the value of taking care of and studying urban ecosys
 \
 
 Take care of our urban ecosystems during the winter and those efforts will bear fruit once spring arrives. 
+
+::: {fig-align="center" style="display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 1em;"}
+![The flowers of an ornamental cherry, one of the first plants to blossom in the spring](imgs/AWS-6432.jpg){.lightbox group="my-gallery7" description="`r descrip_exif("imgs/AWS-6432.jpg")`" fig-alt="An image of the bright pink flower of a cherry tree against a blurred out background"}
+:::
